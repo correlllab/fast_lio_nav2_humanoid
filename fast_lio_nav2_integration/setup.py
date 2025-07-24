@@ -7,7 +7,7 @@ package_name = 'fast_lio_nav2_integration'
 setup(
     name=package_name,
     version='0.0.1',
-    packages=[package_name],  # This must match a subdirectory with __init__.py
+    packages=[package_name],
     data_files=[
         ('share/ament_index/resource_index/packages',
          ['resource/' + package_name]),
