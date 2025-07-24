@@ -4,10 +4,15 @@ Localization and navigation stack for the Unitree H1-2 using fast lio and Nav2.
 
 ## Usage
 
-1. Clone this repository onto the robots pc
+1. Clone this repository onto the robots pc into a foulder
 
 2. Build and run the docker container
 
+## To move the robot
+
+python walking_controller.py
+
+make sure the robot is under strict supervision. Unpredictable behavior like walking into objects can happen.
 
 ## Visualize
 
