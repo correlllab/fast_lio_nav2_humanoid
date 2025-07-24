@@ -4,7 +4,7 @@ Localization and navigation stack for the Unitree H1-2 using fast lio and Nav2.
 
 ## Usage
 
-1. Clone this repository onto the robots pc into a foulder
+1. Clone this repository onto the robots pc into a folder
 
 2. Build and run the docker container
 
