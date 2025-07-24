@@ -59,11 +59,9 @@ WORKDIR /root/ws_pcl_to_ls/src
 RUN git clone https://github.com/ros-perception/pointcloud_to_laserscan.git -b humble
 
 WORKDIR /root/ws_pcl_to_ls
-COPY ./2dslam.launch.py 2dslam.launch.py
 RUN bash -c ". /opt/ros/humble/setup.bash && colcon build --symlink-install"
 RUN echo "source /root/ws_pcl_to_ls/install/setup.bash" >> /root/.bashrc
 
-RUN ls -l /root/ws_integration/src
 WORKDIR /root/ws_integration
 RUN bash -c ". /opt/ros/humble/setup.bash && colcon build --symlink-install"
 
