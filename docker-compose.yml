@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  fastlio:
+    build: .
+    container_name: fastlio-livox
+    network_mode: host  # Enables access to LiDAR on 192.168.123.120
+
+    environment:
+      - DISPLAY=${DISPLAY}
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=all
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix  # GUI support
+      - ./src:/root/ws_fast_lio/src    # Optional: live sync with host
+    command: bash

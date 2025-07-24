@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>fast_lio_nav2_integration</name>
+  <version>0.0.1</version>
+  <description>Package for integrating Fast-LIO with Nav2 for mapping and navigation.</description>
+  <maintainer email="jela4948@colorado.edu">Your Name</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake_auto</buildtool_depend>
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <depend>rclpy</depend>
+  <depend>launch</depend>
+  <depend>launch_ros</depend>
+  <depend>ament_index_python</depend>
+  <depend>fast_lio</depend>
+  <depend>tf2_ros</depend>
+  <depend>pointcloud_to_laserscan</depend>
+  <depend>slam_toolbox</depend>
+  <depend>nav2_bringup</depend>
+  <depend>nav2_bt_navigator</depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
