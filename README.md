@@ -2,6 +2,8 @@
 
 Localization and navigation stack for the Unitree H1-2 using fast lio and Nav2.
 
+![Rviz](images/Nav2.png)
+
 ## Usage
 
 1. Clone this repository onto the robots pc into a folder
